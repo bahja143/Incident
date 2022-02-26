@@ -1,5 +1,5 @@
 {
-  "FilePath": "/home/abdisalam/Documents/Incident/Incident.csproj",
+  "FilePath": "/home/abdisalam/Projects/Web/Incident/Incident.csproj",
   "Configuration": {
     "ConfigurationName": "MVC-3.0",
     "LanguageVersion": "3.0",
@@ -14457,13 +14457,13 @@
   "RootNamespace": "Incident",
   "Documents": [
     {
-      "FilePath": "/home/abdisalam/Documents/Incident/Pages/Error.cshtml",
-      "TargetPath": "Pages\\Error.cshtml",
+      "FilePath": "/home/abdisalam/Projects/Web/Incident/Pages/_ViewImports.cshtml",
+      "TargetPath": "Pages\\_ViewImports.cshtml",
       "FileKind": "mvc"
     },
     {
-      "FilePath": "/home/abdisalam/Documents/Incident/Pages/_ViewImports.cshtml",
-      "TargetPath": "Pages\\_ViewImports.cshtml",
+      "FilePath": "/home/abdisalam/Projects/Web/Incident/Pages/Error.cshtml",
+      "TargetPath": "Pages\\Error.cshtml",
       "FileKind": "mvc"
     }
   ],

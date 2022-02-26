@@ -6230,11 +6230,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/abdisalam/Documents/Incident/Incident.csproj",
+      "projectUniqueName": "/home/abdisalam/Projects/Web/Incident/Incident.csproj",
       "projectName": "Incident",
-      "projectPath": "/home/abdisalam/Documents/Incident/Incident.csproj",
+      "projectPath": "/home/abdisalam/Projects/Web/Incident/Incident.csproj",
       "packagesPath": "/home/abdisalam/.nuget/packages/",
-      "outputPath": "/home/abdisalam/Documents/Incident/obj/",
+      "outputPath": "/home/abdisalam/Projects/Web/Incident/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/abdisalam/.nuget/NuGet/NuGet.Config"

@@ -791,14 +791,17 @@ namespace Incident.Migrations
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
+                    b.Property<bool>("AC")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Brakes")
+                        .HasColumnType("bit");
+
                     b.Property<DateTime>("Date")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("DieselLevel")
+                    b.Property<string>("DeiselLevel")
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<bool>("ExcessiveFluidLeaksEspeciallyUnderMachine")
-                        .HasColumnType("bit");
 
                     b.Property<bool>("FireExtingisher")
                         .HasColumnType("bit");
@@ -809,10 +812,25 @@ namespace Incident.Migrations
                     b.Property<string>("HMR")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<bool>("HandbreakAndwindScreenWipers")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("HornsAlarms")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("HydraulicControls")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Lights")
+                        .HasColumnType("bit");
+
                     b.Property<bool>("Mirrors")
                         .HasColumnType("bit");
 
                     b.Property<bool>("NoAccidentDamageOrFrameIncludingAttachements")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("NoExcessiveFluidLeaksEspeciallyUnderMachine")
                         .HasColumnType("bit");
 
                     b.Property<bool>("NoTyreDamageOrInsuficientInflation")
@@ -824,11 +842,23 @@ namespace Incident.Migrations
                     b.Property<int>("RTGId")
                         .HasColumnType("int");
 
-                    b.Property<bool>("SPREADEROilLeakingFlipperDamageFlipperMissingSPR")
+                    b.Property<bool>("RadioCommunication")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("SPREADEROilLeakingSPR")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("SeatBelts")
                         .HasColumnType("bit");
 
                     b.Property<string>("Shift")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("SpeedLimitOperating")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("Steering")
+                        .HasColumnType("bit");
 
                     b.Property<bool>("TailLightsAreWorking")
                         .HasColumnType("bit");
@@ -836,7 +866,10 @@ namespace Incident.Migrations
                     b.Property<int>("UserId")
                         .HasColumnType("int");
 
-                    b.Property<bool>("VisualCheckOfBeltsBeforeOperation")
+                    b.Property<bool>("VMT")
+                        .HasColumnType("bit");
+
+                    b.Property<bool>("WindowsAreCleanAndNotDamaged")
                         .HasColumnType("bit");
 
                     b.HasKey("Id");

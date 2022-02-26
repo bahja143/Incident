@@ -28,38 +28,83 @@ class RTG extends Component {
     rtg: {},
     rtgCheck: [
       {
-        value: "noTyreDamageOrInsuficientInflation",
+        value: "HydraulicControls",
         label: "Hydraulic controls",
       },
-      { value: "noWheelsLooseNuts", label: "Steering" },
+      { value: "Steering", label: "Steering" },
       {
-        value: "sPREADEROilLeakingFlipperDamageFlipperMissingSPR",
-        label: "Hand Break",
+        value: "WindowsAreCleanAndNotDamaged",
+        label: "Windows are clean and not damaged",
       },
       {
-        value: "noAccidentDamageOrFrameIncludingAttachements",
+        value: "HandbreakAndwindScreenWipers",
+        label: "Hand-break & wind screen wipers ",
+      },
+      { value: "VMT", label: "VMT" },
+      {
+        value: "RadioCommunication",
+        label: "Radio Communication",
+      },
+      {
+        value: "Lights",
         label: "Lights",
       },
-      { value: "visualCheckOfBeltsBeforeOperation", label: "Horns/ Alarms" },
+      { value: "SpeedLimitOperating", label: "Speed limit operating" },
       {
-        value: "excessiveFluidLeaksEspeciallyUnderMachine",
-        label: "Seat belts",
+        value: "AC",
+        label: "AC",
       },
       {
-        value: "floodLightsAreWorking",
+        value: "HornsAlarms",
+        label: "Horns and Alarms",
+      },
+      {
+        value: "SeatBelts",
+        label: "Seat Belts",
+      },
+      {
+        value: "Brakes",
+        label: "Brakes",
+      },
+      {
+        value: "NoTyreDamageOrInsuficientInflation",
         label: "No tyre damage or insuficient inflation",
       },
-      { value: "tailLightsAreWorking", label: "No Wheels- loose nuts" },
       {
-        value: "mirrors",
+        value: "NoWheelsLooseNuts",
+        label: "No Wheels- loose nuts",
+      },
+
+      {
+        value: "NoAccidentDamageOrFrameIncludingAttachements",
         label: "No accident damage or frame including attachements",
       },
       {
-        value: "fireExtingisher",
+        value: "SPREADEROilLeakingSPR",
+        label: "SPREADER: oil leaking; SPR:",
+      },
+      {
+        value: "NoExcessiveFluidLeaksEspeciallyUnderMachine",
         label: "No excessive fluid leaks especially under machine",
       },
-      { value: "dieselLevel", label: "Flood lights are working", string: true },
-      { value: "hMR", label: "Tail lights are working", string: true },
+      {
+        value: "FloodLightsAreWorking",
+        label: "Flood lights are working",
+      },
+      {
+        value: "TailLightsAreWorking",
+        label: "Tail lights are working ",
+      },
+      {
+        value: "Mirrors",
+        label: "Mirrors",
+      },
+      {
+        value: "FireExtingisher",
+        label: "Fire extingisher",
+      },
+      { value: "DeiselLevel", label: "Diesel level", string: true },
+      { value: "HMR", label: "HMR", string: true },
     ],
     data: [],
   };

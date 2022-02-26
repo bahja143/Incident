@@ -48,19 +48,19 @@ namespace Incident.Controllers
 
             if (RTGCheckDb == null) return NotFound();
 
-            RTGCheckDb.NoTyreDamageOrInsuficientInflation = RTGCheck.NoTyreDamageOrInsuficientInflation;
-            RTGCheckDb.NoWheelsLooseNuts = RTGCheck.NoWheelsLooseNuts;
-            RTGCheckDb.SPREADEROilLeakingFlipperDamageFlipperMissingSPR = RTGCheck.SPREADEROilLeakingFlipperDamageFlipperMissingSPR;
-            RTGCheckDb.NoAccidentDamageOrFrameIncludingAttachements = RTGCheck.NoAccidentDamageOrFrameIncludingAttachements;
-            RTGCheckDb.VisualCheckOfBeltsBeforeOperation = RTGCheck.VisualCheckOfBeltsBeforeOperation;
-            RTGCheckDb.ExcessiveFluidLeaksEspeciallyUnderMachine = RTGCheck.ExcessiveFluidLeaksEspeciallyUnderMachine;
-            RTGCheckDb.FloodLightsAreWorking = RTGCheck.FloodLightsAreWorking;
-            RTGCheckDb.TailLightsAreWorking = RTGCheck.TailLightsAreWorking;
-            RTGCheckDb.Mirrors = RTGCheck.Mirrors;
-            RTGCheckDb.FireExtingisher = RTGCheck.FireExtingisher;
-            RTGCheckDb.DieselLevel = RTGCheck.DieselLevel;
-            RTGCheckDb.HMR = RTGCheck.HMR;
-            RTGCheckDb.Shift = RTGCheck.Shift;
+            // RTGCheckDb.NoTyreDamageOrInsuficientInflation = RTGCheck.NoTyreDamageOrInsuficientInflation;
+            // RTGCheckDb.NoWheelsLooseNuts = RTGCheck.NoWheelsLooseNuts;
+            // RTGCheckDb.SPREADEROilLeakingFlipperDamageFlipperMissingSPR = RTGCheck.SPREADEROilLeakingFlipperDamageFlipperMissingSPR;
+            // RTGCheckDb.NoAccidentDamageOrFrameIncludingAttachements = RTGCheck.NoAccidentDamageOrFrameIncludingAttachements;
+            // RTGCheckDb.VisualCheckOfBeltsBeforeOperation = RTGCheck.VisualCheckOfBeltsBeforeOperation;
+            // RTGCheckDb.ExcessiveFluidLeaksEspeciallyUnderMachine = RTGCheck.ExcessiveFluidLeaksEspeciallyUnderMachine;
+            // RTGCheckDb.FloodLightsAreWorking = RTGCheck.FloodLightsAreWorking;
+            // RTGCheckDb.TailLightsAreWorking = RTGCheck.TailLightsAreWorking;
+            // RTGCheckDb.Mirrors = RTGCheck.Mirrors;
+            // RTGCheckDb.FireExtingisher = RTGCheck.FireExtingisher;
+            // RTGCheckDb.DieselLevel = RTGCheck.DieselLevel;
+            // RTGCheckDb.HMR = RTGCheck.HMR;
+            // RTGCheckDb.Shift = RTGCheck.Shift;
 
             await _context.SaveChangesAsync();
 

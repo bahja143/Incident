@@ -18,7 +18,7 @@ const Dashboard = () => {
   useEffect(() => {
     const auth = { Authorization: `bearer ${localStorage["token"]}` };
 
-    Services.get(Config.apiUrl + "/mc", { headers: auth }).then(({ data }) => {
+    Services.get(Config.apiUrl + "/rs", { headers: auth }).then(({ data }) => {
       setRS([
         ...data
           .reverse((a, b) => new Date(a.date) + new Date(b.date))
@@ -26,7 +26,7 @@ const Dashboard = () => {
       ]);
     });
 
-    Services.get(Config.apiUrl + "/mc", { headers: auth }).then(({ data }) => {
+    Services.get(Config.apiUrl + "/rtg", { headers: auth }).then(({ data }) => {
       setRTG([
         ...data
           .reverse((a, b) => new Date(a.date) + new Date(b.date))
@@ -34,16 +34,8 @@ const Dashboard = () => {
       ]);
     });
 
-    Services.get(Config.apiUrl + "/mc", { headers: auth }).then(({ data }) => {
+    Services.get(Config.apiUrl + "/ech", { headers: auth }).then(({ data }) => {
       setECH([
-        ...data
-          .reverse((a, b) => new Date(a.date) + new Date(b.date))
-          .slice(0, 7),
-      ]);
-    });
-
-    Services.get(Config.apiUrl + "/mc", { headers: auth }).then(({ data }) => {
-      setMC([
         ...data
           .reverse((a, b) => new Date(a.date) + new Date(b.date))
           .slice(0, 7),
