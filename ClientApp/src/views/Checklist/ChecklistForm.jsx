@@ -1,16 +1,15 @@
 import React, { Component } from "react";
-import { Formik } from "formik";
 import * as Yup from "yup";
+import { Formik } from "formik";
 
 import { Card, Row, Col } from "react-bootstrap";
 import { MDBDataTableV5 } from "mdbreact";
+import { toast } from "react-toastify";
+import { FormLabel } from "react-bootstrap";
 import { SelectField, SubmitBtn } from "../../components/Form";
 import Config from "../../config/config.json";
 import Services from "../../services/HttpServices";
-import { toast } from "react-toastify";
 import Select from "react-select";
-import { FormLabel } from "react-bootstrap";
-import JwtDecode from "jwt-decode";
 import jwtDecode from "jwt-decode";
 
 class ChecklistForm extends Component {
@@ -34,10 +33,18 @@ class ChecklistForm extends Component {
       { value: 7, label: "RS" },
     ],
     shifts: [
-      { value: "A", label: "A" },
-      { value: "B", label: "B" },
-      { value: "C", label: "C" },
-      { value: "D", label: "D" },
+      { value: "A: 7:00am - 3:00pm", label: "A: 7:00am - 3:00pm" },
+      { value: "A: 3:00pm - 11:00pm", label: "A: 3:00pm - 11:00pm" },
+      { value: "A: 11:00pm - 7:00am", label: "A: 11:00pm - 7:00am" },
+      { value: "B: 7:00am - 3:00pm", label: "B: 7:00am - 3:00pm" },
+      { value: "B: 3:00pm - 11:00pm", label: "B: 3:00pm - 11:00pm" },
+      { value: "B: 11:00pm - 7:00am", label: "B: 11:00pm - 7:00am" },
+      { value: "C: 7:00am - 3:00pm", label: "C: 7:00am - 3:00pm" },
+      { value: "C: 3:00pm - 11:00pm", label: "C: 3:00pm - 11:00pm" },
+      { value: "C: 11:00pm - 7:00am", label: "C: 11:00pm - 7:00am" },
+      { value: "D: 7:00am - 3:00pm", label: "D: 7:00am - 3:00pm" },
+      { value: "D: 3:00pm - 11:00pm", label: "D: 3:00pm - 11:00pm" },
+      { value: "D: 11:00pm - 7:00am", label: "D: 11:00pm - 7:00am" },
       { value: "General shift", label: "Genera shift" },
     ],
     forklifts: [],

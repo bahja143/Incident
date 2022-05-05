@@ -168,3 +168,4 @@
 /home/abdisalam/Projects/Web/Incident/obj/Debug/netcoreapp3.1/Incident.dll
 /home/abdisalam/Projects/Web/Incident/obj/Debug/netcoreapp3.1/Incident.pdb
 /home/abdisalam/Projects/Web/Incident/obj/Debug/netcoreapp3.1/Incident.genruntimeconfig.cache
+/home/abdisalam/Projects/Web/Incident/bin/Debug/netcoreapp3.1/package-lock.json
